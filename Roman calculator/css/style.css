@@ -1,0 +1,111 @@
+
+.calculate {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+.calcilate_conteiner {
+   width: 80%;
+   margin: 0 auto;
+   padding: 2%;
+}
+
+.calculate_A {
+   border-radius: 10px;
+   height: 20px;
+   padding: 7px;
+   border: none;
+   margin-bottom: 2%;
+   box-shadow: 0 3px 20px rgba(221,221,221,.25), inset 0 2px 0 rgba(255,255,255,.6);
+   }
+   .calculate_A:focus {
+      outline: none;
+      box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+   }
+   .calculate_B {
+
+      border-radius: 10px;
+      height: 20px;
+      padding: 7px;
+      border: none;
+      box-shadow: 0 3px 20px rgba(221,221,221,.25), inset 0 2px 0 rgba(255,255,255,.6);
+      }
+      .calculate_B:focus {
+         outline: none;
+         box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+      }
+
+   .calculate_btn {
+      width: 150px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: black;
+      color: white;
+   }
+   .calculate_title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 2%;
+      font-size: 2vw;
+   }
+   .calculate_btn:hover {
+      background-color: white;
+      color: black;
+   }
+   .calculate_resulte {
+      color: #fff;
+      font-size: 25px;
+      margin-top: 1%;
+   }
+   .calculate_zna {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .calculate_inp {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .znac {
+      position: relative;
+      font-weight: 700;
+      color: rgb(209,209,217);
+      padding: .5em 1em;
+      outline: none;
+      border-radius: 3px;
+      background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+      transition: .2s ease-in-out;
+    }
+    .znac:active {
+      top: 1px;
+      background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+      box-shadow:
+       0 0 1px rgba(0,0,0,.5) inset,
+       0 2px 3px rgba(0,0,0,.5) inset,
+       0 1px 1px rgba(255,255,255,.1);
+    }
+
+   .znac:not(:last-child) {
+      margin-right: 2%;
+   }
+   .calculate_zna > p:hover {
+      background-color: black;
+      color:white;
+      box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+   }
+   .calculate_resulte {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }

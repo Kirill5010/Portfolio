@@ -1,0 +1,132 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background: black;
+}
+
+.conteiner {
+   margin: 0 auto;
+   width: 80vw;
+   height: 100%;
+}
+.cards {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+.card {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   height: inherit;
+   flex: 0 0 300px;
+   border: 1px solid black;
+   margin: 5px;
+   padding: 10px;
+   background: #fff;
+}
+.card div {
+   margin-top: 10px;
+}
+.card strong {
+   align-self: flex-end;
+}
+.card h3 {
+   text-align: center;
+}
+.remove {
+   transform: scale(0.5);
+   opacity: 0;
+   transition: .2s;
+}
+.card_img {
+   width: 100%;
+   height: 250px;
+}
+.pop_up {
+   max-width: 300px;
+   height: auto;
+   color: #fff;
+   padding: 10px;
+   background-color: black;
+   border: 1px solid black;
+}
+
+.pop_up_mask {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(128, 128, 128, 0.543);
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+.pop_up_mask-active {
+   display: flex;
+   transform: translateY(-150%);
+   animation: ani 1s forwards;
+}
+.add_card {
+   width: 90vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+.add_card input {
+   margin-right: 10px;
+   background-color: black;
+   color: #fff;
+   border: none;
+   border-bottom: 1px solid gray;
+}
+.add_card input:focus {
+   outline: none;
+}
+.btn_add {
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 10px 30px 10px 30px;
+   cursor: pointer;
+}
+.btn_add:hover {
+  border-radius: 10px;
+  transition: .4s;
+}
+.card_like {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.like {
+   width: 20px;
+   height: 20px;
+   align-self: flex-end;
+}
+
+@keyframes ani {
+   0% {transform: translateY(-150%);}
+   100% {transform: translateY(0);}
+ }
+
+@media (max-width: 992px) {
+   .add_card {
+      flex-direction: column;
+   }
+   .add_card input {
+      margin: 0;
+      margin-bottom: 15px;
+   }
+}
+
+@media (max-width: 280px) {
+   .card {
+      flex: 0 0 250px;
+   }
+}

@@ -1,0 +1,1839 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Lato:ital,wght@1,100;1,300&family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Lato:ital,wght@1,100;1,300&family=Nunito+Sans&family=Yeseva+One&display=swap");
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #131313;
+}
+
+h1 {
+  margin: 0;
+}
+
+.wrapper-inner {
+  padding: 4vw;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.wrapper-inner__wide {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dec_left {
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+}
+
+.dec_svg {
+  margin: 0px 8px 0px 8px;
+}
+
+.dec_right {
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+}
+
+.scroll_up {
+  width: 50px;
+  height: 70px;
+  position: fixed;
+  right: 70px;
+  bottom: 70px;
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 70;
+}
+
+.scroll_up--active {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+.section-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #131313;
+  border-bottom: 1px solid black;
+}
+
+.section-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-header__link {
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 15px;
+  color: #E3B873;
+}
+
+.section-header__list-link {
+  text-decoration: none;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+.section-header__list-link:hover {
+  color: #E3B873;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-header__list li {
+  margin-left: 45px;
+  list-style-type: none;
+}
+
+.section-header__numder {
+  color: #E3B873;
+}
+
+.section-header__link-btn {
+  margin-left: 45px;
+  padding: 13px 33px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+.section-header__link-btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #131313;
+}
+
+.burger_nav {
+  z-index: 3;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #131313;
+  top: -120px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  width: 100vw;
+  height: 200px;
+}
+
+.burger_nav ul {
+  min-height: 200px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 20px;
+}
+
+.burger_nav ul a {
+  font-size: 25px;
+}
+
+.burger_nav-active {
+  top: 80px;
+  min-height: 200px;
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.burger img {
+  width: 50px;
+}
+
+.burger-active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section-welcome {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  margin-top: 80px;
+  width: 100%;
+  min-height: 700px;
+  background: url(/img/welcom.jpg) no-repeat;
+  background-size: cover;
+}
+
+.section-welcome_height {
+  height: 700px;
+}
+
+.section-welcome__content {
+  max-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section-welcome__content_title {
+  max-width: 650px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 45px;
+}
+
+.section-welcome__content_title span {
+  color: #E3B873;
+}
+
+.section-welcome__content_text {
+  padding: 5px;
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.section-welcome__content_link {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-welcome__content_link_item {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 18px 22px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+
+.section-welcome__content_link_item:last-child {
+  margin-left: 20px;
+}
+
+.section-welcome__content_link_item:hover {
+  border: none;
+  background-color: #E3B873;
+  border: 1px solid #E3B873;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-welcome-active {
+  margin-top: 265px;
+}
+
+.section-completed {
+  width: 100%;
+  background-color: #131313;
+}
+
+.section-completed_nav {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-completed_nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.section-completed_nav a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.section-completed_nav a:hover {
+  text-decoration: underline;
+  color: #E3B873;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-completed_dec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-completed_centr {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-completed_centr_right {
+  max-width: 670px;
+  max-height: 480px;
+  position: relative;
+}
+
+.section-completed_centr_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-completed_centr_row h3 {
+  color: #E3B873;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.section-completed_centr_row p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.section-completed_centr_lift_title {
+  max-width: 250px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #E3B873;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.section-completed_centr_lift_text {
+  color: #FFFFFF;
+  max-width: 440px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.section-completed_centr_button {
+  margin-top: 90px;
+}
+
+.section-completed_centr_button h3 {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.wiw {
+  padding-right: 50px;
+}
+
+.marg {
+  margin-bottom: 13px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
+.slider {
+  max-width: 760px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_see {
+  min-width: 680px;
+  max-height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.slider_see::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.slider_nav {
+  padding: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 760px;
+  height: 20px;
+}
+
+.slider_btn {
+  cursor: pointer;
+}
+
+.slider_btn_prev {
+  cursor: pointer;
+}
+
+.slider_btn_next {
+  cursor: pointer;
+}
+
+.slider_img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.dote {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.click_dote {
+  background-color: #E3B873;
+}
+
+.control_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control_bar_left {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #E3B873;
+  border-radius: 100%;
+}
+
+.control_bar_right {
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #E3B873;
+  border-radius: 100%;
+}
+
+.section-feedback {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-color: #FFFFFF;
+}
+
+.section-feedback_video {
+  position: absolute;
+  top: -5%;
+  max-width: 800px;
+  max-height: 400px;
+}
+
+.section-feedback__flex {
+  padding-top: 25%;
+  margin: 0 auto;
+  max-width: 765px;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-feedback__flex_item-form {
+  height: 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-feedback__flex_item-form_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-feedback__flex_item-form_top_lab {
+  margin-right: 50px;
+  margin-right: 8px;
+  color: #363636;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.section-feedback__flex_item-form_top_inp {
+  margin-right: 35px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.section-feedback__flex_item-form_top_btn {
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 20px 50px 20px 50px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  border: none;
+}
+
+.section-feedback__flex_item-form_top_btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+}
+
+.section-feedback__flex_item-form_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.section-feedback__flex_item-form_button_lab {
+  color: #131313;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 163.68%;
+}
+
+.section-feedback__flex_item-form_button input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.section-feedback__flex_item-form_button input:active {
+  color: #FFFFFF;
+  background-color: #E3B873;
+}
+
+.section-feedback__flex_dec {
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+}
+
+.section-feedback__flex_item {
+  color: #131313;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.section-card_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+.section-card_flex_title {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #131313;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.section-card_card_flex {
+  max-width: 1200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+}
+
+.card_flex_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  min-height: 600px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+}
+
+.card_flex_item_img {
+  width: 100%;
+}
+
+.card_flex_item_service {
+  position: absolute;
+  top: 50%;
+  background-color: #FFFFFF;
+  width: 330px;
+  max-height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card_flex_item_service_text {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #131313;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.card_flex_item_service_list {
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
+}
+
+.card_flex_item_btn {
+  text-decoration: none;
+  padding: 17px 21px 17px 21px;
+  background-color: #E3B873;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.card_flex_item:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card_flex_item:not(:hover) {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-form {
+  min-height: auto;
+}
+
+.section-form_slider {
+  min-width: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.section-form_slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.section-form_adept-slider {
+  position: relative;
+  width: 670px;
+  height: auto;
+  display: none;
+  margin: 0 auto;
+}
+
+.section-form_content {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-form_content_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-form_content_list_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 10px;
+}
+
+.section-form_content_list_title {
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  border: 5px solid #FFFFFF;
+  font-weight: 700;
+  background-color: #E3B873;
+  color: #FFFFFF;
+}
+
+.section-form_content_list_text {
+  max-width: 300px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #363636;
+  margin-left: 15px;
+}
+
+.section-form_content_left {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 100vh;
+  background-image: url(/img/form.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-form_content_form {
+  padding: 28px;
+  width: 500px;
+  height: 530px;
+  background-color: #131313;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-form_content_form_top {
+  margin-bottom: 39px;
+  max-width: 350px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.section-form_content_form_centr label {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 7px;
+}
+
+.section-form_content_form_centr_inp {
+  padding: 5px;
+  color: #FFFFFF;
+  width: 100%;
+  background-color: #131313;
+  border: none;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.section-form_content_form_bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.section-form_content_form_bottom button {
+  margin-top: 39px;
+  border-radius: 3px;
+  padding: 18px 21px 18px 21px;
+  background-color: #E3B873;
+  color: #FFFFFF;
+  border: 1px solid #E3B873;
+}
+
+.section-form_content_form_bottom .btn:hover {
+  background-color: #131313;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-form_content_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-form_content_bottom_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E3B873;
+}
+
+.section-form_content_bottom_text {
+  width: 340px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  color: #E3B873;
+  margin-left: 25px;
+}
+
+.check {
+  width: 18px;
+  height: 18px;
+}
+
+.fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fl span {
+  margin-left: 8px;
+}
+
+.section-form_mobail_title {
+  display: none;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-variants {
+  min-height: 864px;
+  background: url(/img/varians.jpg) no-repeat;
+  background-size: cover;
+}
+
+.section-variants_content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-variants_content_left {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section-variants_content_left_title {
+  width: 350px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #E3B873;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-variants_content_left_list li {
+  list-style-type: none;
+  line-height: 38px;
+}
+
+.section-variants_content_left_list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.section-variants_content_left_list {
+  padding: 0;
+}
+
+.section-variants_content_left_list a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.section-variants_content_left_list a:hover {
+  color: #E3B873;
+  text-decoration: underline;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-variants_content_right {
+  max-width: 715px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-variants_content_right_images {
+  margin: 5px;
+  min-height: 950px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-variants_content_right_images_img {
+  max-width: 350px;
+}
+
+.section-variants-mobail_litle {
+  display: none;
+  max-width: 350px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #E3B873;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.section-reviews {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), black);
+  background-size: cover;
+}
+
+.section-reviews_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-reviews_top_title {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: #131313;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+}
+
+.section-reviews_top_text {
+  padding-top: 24px;
+  max-width: 400px;
+  text-align: center;
+  color: #131313;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.section-reviews_bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 39px;
+  padding: 5px;
+}
+
+.section-reviews_bottom_card {
+  padding: 3%;
+  min-height: 420px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.section-reviews_bottom_card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-reviews_bottom_card:not(:hover) {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-reviews_bottom_card_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-reviews_bottom_card_title img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.section-reviews_bottom_card_title p {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  color: #131313;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.section-reviews_bottom_card_text {
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 180%;
+  color: #959595;
+}
+
+.section-reviews_bottom_card_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-reviews_bottom_card_btn div {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E3B873;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.section-reviews_bottom_card_btn div strong {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.section-registration {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(black)), url(/img/registration.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), black), url(/img/registration.png);
+  background-size: cover;
+}
+
+.section-registration_content_map {
+  width: 80%;
+  height: 500px;
+}
+
+.section-registration_content_map_iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.section-registration_content {
+  min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-registration_content_text {
+  max-width: 580px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-registration_content_links {
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-registration_content_links_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #E3B873;
+  border-radius: 100%;
+}
+
+.section-registration_content_form {
+  width: 80%;
+  min-height: 415px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px;
+  background-color: #131313;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.content_form_title {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.content_form_inp label {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 7px;
+}
+
+.content_form_inp input {
+  padding: 5px;
+  color: #FFFFFF;
+  width: 100%;
+  background-color: #131313;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.content_form_btn button {
+  background-color: #E3B873;
+  color: #FFFFFF;
+  padding: 10px 50px 10px 50px;
+  cursor: pointer;
+}
+
+.block {
+  display: none;
+}
+
+.section-footer {
+  height: 100px;
+  background-color: #131313;
+}
+
+@media (min-width: 2560px) {
+  .section-welcome__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-welcome__content_title {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-completed_centr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-completed_centr_right {
+    margin-top: 15px;
+  }
+  .section-completed_centr_lift_title {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1150px) {
+  .nav_header {
+    display: none;
+  }
+  .section-header__link-btn {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .wrapper-inner__wide {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section-variants_content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1125px) {
+  .section-feedback__flex {
+    padding-top: 33%;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-completed_nav {
+    display: none;
+  }
+  .section-completed_centr {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-completed_centr_lift_title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .section-completed_centr_row {
+    display: none;
+  }
+  .section-completed_centr_lift_text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .slider {
+    display: none;
+  }
+  .control_bar {
+    opacity: 1;
+  }
+  .section-feedback {
+    background-color: #131313;
+  }
+  .section-feedback__flex {
+    padding-top: 360px;
+  }
+  .section-feedback__flex_item {
+    color: #FFFFFF;
+  }
+  .section-feedback__flex_item-form_button_lab {
+    color: #FFFFFF;
+  }
+  .section-feedback_video {
+    top: 0%;
+  }
+  .section-feedback__flex_item-form_top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-feedback__flex_item-form_top_inp {
+    background-color: #131313;
+  }
+  .section-card_card_flex {
+    max-width: 638px;
+    margin: 0 auto;
+  }
+  .card_flex_item {
+    margin: 20px;
+  }
+  .section-form_content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-form_content_bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  .section-variants-mobail_litle {
+    display: block;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .section-form_content_left {
+    display: none;
+  }
+  .section-form_adept-slider {
+    display: block;
+  }
+  .section-form {
+    background-color: #131313;
+  }
+  .section-form_content_form_top {
+    display: none;
+  }
+  .section-form_mobail_title {
+    display: block;
+  }
+  .section-form_content_bottom {
+    display: none;
+  }
+  .section-form_content_form_bottom {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section-variants {
+    display: none;
+  }
+  .section-reviews {
+    display: none;
+  }
+  .section-registration_content_form {
+    display: none;
+  }
+  .section-registration_content_map {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .section-registration_content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-registration_content_text {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .section-registration_content_map {
+    height: 300px;
+  }
+  .section-registration_content_links {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .section-registration {
+    background-color: #131313;
+    background-image: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-completed_centr_right {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 750px) {
+  .section-feedback_video {
+    max-width: 550px;
+  }
+  .section-form_adept-slider {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-welcome__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .section-completed_centr_right {
+    max-width: 500px;
+  }
+  .section-feedback_video {
+    max-width: 500px;
+  }
+  .section-form_adept-slider {
+    max-width: 500px;
+  }
+  .section-form_slider {
+    min-width: 390px;
+  }
+  .slider_see {
+    min-width: 390px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-welcome__content_title {
+    font-size: 23px;
+  }
+  .section-welcome__content_link_item {
+    padding: 15px 8px;
+  }
+  .section-completed_centr_right {
+    max-width: 320px;
+  }
+  .section-feedback_video {
+    max-width: 340px;
+    min-height: 200px;
+  }
+  .section-form_adept-slider {
+    max-width: 320px;
+  }
+  .section-form_slider {
+    min-width: 320px;
+  }
+  .section-feedback__flex {
+    padding-top: 210px;
+  }
+  .section-form_content_form_bottom button {
+    width: 90vw;
+  }
+  .slider_see {
+    min-width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-feedback_video {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 281px) {
+  .section-completed_centr_right {
+    max-width: 240px;
+  }
+  .control_bar_left {
+    width: 25px;
+    height: 25px;
+  }
+  .control_bar_right {
+    width: 25px;
+    height: 25px;
+  }
+  .section-feedback_video {
+    max-width: 250px;
+  }
+  .section-form_adept-slider {
+    max-width: 250px;
+    height: 180px;
+  }
+  .section-form_slider {
+    max-width: 250px;
+    height: 180px;
+  }
+  .card_flex_item_service {
+    max-width: 232px;
+  }
+  .slider_see {
+    min-width: 240px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

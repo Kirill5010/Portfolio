@@ -1,0 +1,171 @@
+.wrapper {
+   width: 90vw;
+   margin: 0 auto;
+}
+.cards {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+.card {
+   width: 32%;
+   background: #FAFAFA;
+   border: 4px solid #EBEBEB;
+   border-radius: 8px;
+   margin-bottom: 72px;
+   font-family: 'TT Firs Neue';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 2vw;
+   line-height: 140%;
+   letter-spacing: 0.16em;
+   color: #2F2F2F;
+   padding: 40px 100px 80px 40px;
+   box-sizing: border-box;
+   position: relative;
+}
+.down {
+   display: none;
+   position: absolute;
+   right: 5%;
+   top: 14%;
+
+}
+.down-active {
+   display: block;
+}
+.card-active {
+   width: 80%;
+   text-align: center;
+}
+
+.btn {
+   width: 60%;
+   height: 68px;
+   position: absolute;
+   left: 40px;
+   bottom: -34px;
+   background: #707070;
+   border-radius: 8px;
+   color: #fff;
+   border: none;
+}
+.btn:hover {
+   transition: .4s;
+   background-color: #F96D6B;
+}
+
+.card-long {
+   width: 65%;
+   margin-top: -80px;
+}
+.card_button {
+   width: 32%;
+   background: #FAFAFA;
+   border: 4px solid #EBEBEB;
+   border-radius: 8px;
+   margin-bottom: 72px;
+   font-family: 'TT Firs Neue';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 2vw;
+   line-height: 140%;
+   letter-spacing: 0.16em;
+   color: #2F2F2F;
+   box-sizing: border-box;
+   position: relative;
+   padding: 40px;
+   box-sizing: border-box;
+}
+.btnn {
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 20%;
+   height: 100%;
+   border-radius: 8px;
+   color: #fff;
+   border: 4px solid #F96D6B;
+   background-color: #F96D6B;
+}
+.btn-active {
+   background-color: #F96D6B;
+   height: 10%;
+   bottom: -5%;
+}
+.card_text {
+   width: 100%;
+   padding: 15px;
+   text-align: left;
+   margin-top: 20px;
+}
+.card_par {
+   width: 100%;
+   height: 0;
+   padding: 15px;
+   text-align: left;
+   opacity: 0;
+   margin: 0;
+   margin-top: 20px;
+   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.card_par-open {
+   opacity: 1;
+   height: inherit;
+   transition: max-height 1s ease-in-out;
+}
+.mask_pop_up {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   z-index: 2;
+
+   transform: translateY(-30%) scale(0);
+   transition: .4s ease-in-out;
+}
+.active {
+   transform: translateY(0%) scale(100%);
+   background-color: rgba(0,0,0, .8);
+}
+.pop_uo_conteiner {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.card_pop_up {
+   width: 32%;
+   background: #FAFAFA;
+   border: 4px solid #EBEBEB;
+   border-radius: 8px;
+   margin-bottom: 72px;
+   font-family: 'TT Firs Neue';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 2vw;
+   line-height: 140%;
+   letter-spacing: 0.16em;
+   color: #2F2F2F;
+   padding: 40px 100px 80px 40px;
+   box-sizing: border-box;
+   position: relative;
+   margin: 0 auto;
+}
+.pop_up_btn {
+   width: 50%;
+   height: 68px;
+   position: absolute;
+   left: 40px;
+   bottom: -34px;
+   background: #F96D6B;
+   border-radius: 8px;
+   color: #fff;
+   border: none;
+}
