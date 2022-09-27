@@ -1,11 +1,11 @@
-// ================== Слайдер =====================================
+ // ================== Слайдер =====================================
 class Img {
    img = document.createElement('img')
    class = 'slider_img'
-   constructor (link){
+   constructor (link) {
         this.link = link
    }
-   add(){
+   add() {
       document.querySelector('.slider_see').append(this.img)
       this.img.classList.add(this.class)
       this.img.setAttribute('src', this.link)

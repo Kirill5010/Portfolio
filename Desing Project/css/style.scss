@@ -587,7 +587,7 @@ h1 {
    }
 }
 .card_flex_item {
-   flex: 0 0 300px;
+   flex: 1 1 300px;
    min-height: 600px;
    position: relative;
    display: flex;
@@ -1231,6 +1231,7 @@ h1 {
    .section-card_card_flex {
       max-width: 638px;
       margin: 0 auto;
+      justify-content: center;
    }
    .card_flex_item {
       margin: 20px;

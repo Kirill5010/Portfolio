@@ -1,6 +1,5 @@
-
-
-let arrColor = ['red', 'blue', 'violet', 'brown', 'yellow', 'green', 'wheat']
+function load (){
+  let arrColor = ['red', 'blue', 'violet', 'brown', 'yellow', 'green', 'wheat']
 class Game {
     elem = document.createElement('div')
     className = 'imgCard'
@@ -77,24 +76,6 @@ class Game {
           obj.gameOver(attempt)
           obj.sound()
        })
-
-      //  this.btn.addEventListener('click', ()=>{
-      //   fetch(url)
-      //   .then(response => response.json())
-      //   .then(json => {
-      //    json.length = 5
-      //    let result = 0
-      //    let attempt = 5
-      //    for (let elem of json) {
-      //       let obj = new Game(elem.url, Math.floor(Math.random() * 1000))
-      //       obj.createBalls()
-      //       obj.removeBalls(result)
-      //       obj.attempts()
-      //       obj.gameOver(attempt)
-      //       obj.addBalls()
-      //    }
-      //  })
-      // })
     }
     gameOver (attempt){
       this.elem.addEventListener('click', ()=>{
@@ -134,7 +115,6 @@ class Game {
 const generation = () =>{
   let result = 0
   let attempt = 5
-  console.log('hello')
    for (let index = 0; index < 15; index++) {
       let random = Math.floor(Math.random() * arrColor.length)
       let obj = new Game(arrColor[random], Math.floor(Math.random() * 1000))
@@ -146,35 +126,7 @@ const generation = () =>{
       obj.sound()
       obj.addBalls()
    }
+ }
+ generation()
 }
-
-window.onload = generation()
-
-// fetch(url)
-//   .then(response => response.json())
-//   .then(json => {
-//    json.length = 10
-//    let result = 0
-//    let attempt = 5
-//    for (let elem of json) {
-//       let obj = new Game(elem.url, Math.floor(Math.random() * 1000))
-//       obj.createBalls()
-//       obj.removeBalls(result)
-//       obj.closeStart()
-//       obj.attempts()
-//       obj.gameOver(attempt)
-//       obj.sound()
-//       obj.addBalls()
-//    }
-// })
-
-
-// function request (url, method, body) {
-//    return fetch(url, {
-//        method : method,
-//        body : JSON.stringify(body),
-//        headers: {'Content-Type' : 'application/json'}
-//    }).then((response) => {
-//        return response.json()
-//    })
-// }
+window.onload = load()
